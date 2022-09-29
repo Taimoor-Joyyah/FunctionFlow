@@ -1,0 +1,15 @@
+Limits:
+.String recognition is not supported. eg. return in string is considered return statement.
+.single statement is not supported.
+
+Next Goal:
+
+.Add else Block support.
+.Add for loop support.
+.Add Break and Continue flow.
+.Allow Single Statement without {} other than function body.
+.Show return type.
+
+Very Next Goal:
+
+.Allow Parallel Processing.
