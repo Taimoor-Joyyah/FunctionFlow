@@ -3,6 +3,7 @@ public class ReturnBody implements Body{
 
     @Override
     public void parse(String code) {
-        returnData = code.split(" ", 2)[1].replace(';', ' ');
+        var index = code.indexOf(';');
+        returnData = code.substring(7, index);
     }
 }

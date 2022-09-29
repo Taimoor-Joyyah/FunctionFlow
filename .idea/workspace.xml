@@ -1,28 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc065ce5-c930-4f4b-90b1-ead7ea73b75e" name="Changes" comment="Added if, if else and while loop structures">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BlockBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Body.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ConditionBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FlowParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PrototypeBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ReturnBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StatementBlockBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StatementBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/StructureType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BlockBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BlockBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ReturnBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ReturnBody.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +33,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2FPXgF4TbrUazBRIDtTKztfh1Io" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -56,6 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
@@ -83,8 +76,16 @@
       <updated>1664394807055</updated>
       <workItem from="1664394811573" duration="9839000" />
       <workItem from="1664395878843" duration="2826000" />
-      <workItem from="1664445912533" duration="13896000" />
+      <workItem from="1664445912533" duration="14805000" />
     </task>
+    <task id="LOCAL-00001" summary="Added if, if else and while loop structures">
+      <created>1664460518489</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664460518489</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +105,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added if, if else and while loop structures" />
     <option name="LAST_COMMIT_MESSAGE" value="Added if, if else and while loop structures" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Test.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

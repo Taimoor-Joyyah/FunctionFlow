@@ -30,8 +30,9 @@ public class BlockBody implements Body {
                 index = close + 1;
             } else if (statementIndex >= 0 && (statementIndex < conditionalIndex || conditionalIndex == -1)) {
                 if (FlowParser.nextWord(index, code).equals("return")) {
+                    int open = code.indexOf("return", index);
                     int close = code.indexOf(";", index);
-                    var returnString = code.substring(index, close + 1);
+                    var returnString = code.substring(open, close + 1);
                     var returnBody = new ReturnBody();
                     returnBody.parse(returnString);
                     bodies.add(returnBody);
