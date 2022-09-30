@@ -8,7 +8,6 @@ public class FlowParser {
     }
 
     public void parse() {
-        System.out.println(code);
         int mainOpen = code.indexOf('{');
         int mainClose = code.lastIndexOf('}');
 
