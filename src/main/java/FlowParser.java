@@ -4,10 +4,11 @@ public class FlowParser {
     private final String code;
 
     public FlowParser(String code) {
-        this.code = code;
+        this.code = encode(code);
     }
 
     public void parse() {
+        System.out.println(code);
         int mainOpen = code.indexOf('{');
         int mainClose = code.lastIndexOf('}');
 
@@ -20,6 +21,39 @@ public class FlowParser {
         var body = new BlockBody();
         body.parse(mainString);
         mainBlock = body;
+    }
+
+    public static String encode(String code) {
+        var builder = new StringBuilder();
+        var search = '\0';
+        for (var character : code.toCharArray()) {
+            if (search == '\0') {
+                if (character == '\'')
+                    search = '\'';
+                else if (character == '\"')
+                    search = '\"';
+            }
+            else {
+                if (character != search){
+                    if (character == ';') {
+                        builder.append("\\SEMI_COLON\\");
+                        continue;
+                    } else if (character == '{') {
+                        builder.append("\\OPEN_BRACKET\\");
+                        continue;
+                    }
+                }
+                else
+                    search = '\0';
+            }
+            builder.append(character);
+        }
+        return builder.toString();
+    }
+
+    public static String decode(String code) {
+        return code.replace("\\SEMI_COLON\\", ";")
+                   .replace("\\OPEN_BRACKET\\", "{");
     }
 
     protected static int otherEnd(int index, String code) {
