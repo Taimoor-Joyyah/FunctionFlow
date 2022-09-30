@@ -39,7 +39,6 @@ public class BlockBody implements Body {
                     close = statementIndex;
                     statementIndex = code.indexOf(';', close + 1);
                 } while (statementIndex >= 0 && (conditionalIndex == -1 || statementIndex < conditionalIndex));
-
                 statementBlocking(code, index, close);
 
                 index = close + 1;

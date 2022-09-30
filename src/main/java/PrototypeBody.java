@@ -9,10 +9,11 @@ public class PrototypeBody implements Body {
         var close = code.indexOf(')');
 
         var elements = code.substring(0, open).split(" ");
-        name = elements[elements.length - 1];
-        returnType = elements[elements.length - 2];
+        name = elements[elements.length - 1].trim();
+        returnType = elements[elements.length - 2].trim();
 
         var parameterString = code.substring(open + 1, close);
         parameters = parameterString.split(",");
+        for (int i = 0; i < parameters.length; i++) parameters[i] = parameters[i].trim();
     }
 }

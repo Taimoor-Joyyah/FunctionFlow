@@ -1,4 +1,4 @@
-public int factorial(int number) {
+public int factorial(int number, char num) {
     if (number < 0) {
         System.out.println("Number must be < 0");
         return -1;

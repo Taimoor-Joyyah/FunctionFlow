@@ -8,8 +8,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc065ce5-c930-4f4b-90b1-ead7ea73b75e" name="Changes" comment="fix return issues">
+    <list default="true" id="cc065ce5-c930-4f4b-90b1-ead7ea73b75e" name="Changes" comment="cleaning">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example01" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/example01" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example02" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/example02" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BlockBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BlockBody.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PrototypeBody.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PrototypeBody.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +62,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test/java" />
     </key>
@@ -126,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664519459767</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="cleaning">
+      <created>1664550783575</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664550783575</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,9 +171,19 @@
     <MESSAGE value="Added if, if else and while loop structures" />
     <MESSAGE value="fix some issues" />
     <MESSAGE value="fix return issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix return issues" />
+    <MESSAGE value="cleaning" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaning" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Test.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="StatementBlockBody" memberName="statementList" />
