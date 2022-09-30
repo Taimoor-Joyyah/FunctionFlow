@@ -10,7 +10,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cc065ce5-c930-4f4b-90b1-ead7ea73b75e" name="Changes" comment="fix return issues">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FlowParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FlowParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
