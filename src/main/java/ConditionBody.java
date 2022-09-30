@@ -11,7 +11,7 @@ public class ConditionBody implements Body {
 
         var prototype = code.substring(0, bodyOpen).trim();
         var open = prototype.indexOf('(');
-        var close = prototype.indexOf(')');
+        var close = prototype.lastIndexOf(')');
 
         condition = prototype.substring(open + 1, close);
         setStructure(prototype.substring(0, open).trim());

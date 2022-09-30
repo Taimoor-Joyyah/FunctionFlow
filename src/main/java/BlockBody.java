@@ -28,32 +28,41 @@ public class BlockBody implements Body {
                 bodies.add(conditionalBody);
 
                 index = close + 1;
-            } else if (statementIndex >= 0 && (statementIndex < conditionalIndex || conditionalIndex == -1)) {
-                if (FlowParser.nextWord(index, code).equals("return")) {
-                    int open = code.indexOf("return", index);
-                    int close = code.indexOf(";", index);
-                    var returnString = code.substring(open, close + 1);
-                    var returnBody = new ReturnBody();
-                    returnBody.parse(returnString);
-                    bodies.add(returnBody);
-
-                    index = close + 1;
-                    continue;
-                }
-                int close;
+            } else if (statementIndex >= 0) {
+                int close = index;
                 do {
+                    if (FlowParser.nextWord(close, code).equals("return")) {
+                        statementBlocking(code, index, close);
+                        returnBlocking(code, close);
+                        return;
+                    }
                     close = statementIndex;
                     statementIndex = code.indexOf(';', close + 1);
-                } while (statementIndex >= 0 && (statementIndex < conditionalIndex || conditionalIndex == -1));
+                } while (statementIndex >= 0 && (conditionalIndex == -1 || statementIndex < conditionalIndex));
 
-                var statementBlockString = code.substring(index, close + 1);
-                var statementBlockBody = new StatementBlockBody();
-                statementBlockBody.parse(statementBlockString);
-                bodies.add(statementBlockBody);
+                statementBlocking(code, index, close);
 
                 index = close + 1;
             }
             else if (code.substring(index).isBlank()) break;
         }
+    }
+
+    private void statementBlocking(String code, int index, int close) {
+        var statementBlockString = code.substring(index, close + 1);
+        if (!statementBlockString.isBlank()) {
+            var statementBlockBody = new StatementBlockBody();
+            statementBlockBody.parse(statementBlockString);
+            bodies.add(statementBlockBody);
+        }
+    }
+
+    private void returnBlocking(String code, int index) {
+        int open = code.indexOf("return", index);
+        int close = code.indexOf(";", index);
+        var returnString = code.substring(open, close + 1);
+        var returnBody = new ReturnBody();
+        returnBody.parse(returnString);
+        bodies.add(returnBody);
     }
 }
