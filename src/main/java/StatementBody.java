@@ -4,4 +4,9 @@ public class StatementBody implements Body{
     public void parse(String code) {
         statement = code.trim();
     }
+
+    @Override
+    public String toString() {
+        return statement;
+    }
 }

@@ -47,6 +47,11 @@ public class BlockBody implements Body {
         }
     }
 
+    @Override
+    public String toString() {
+        return null;
+    }
+
     private void statementBlocking(String code, int index, int close) {
         var statementBlockString = code.substring(index, close + 1);
         if (!statementBlockString.isBlank()) {

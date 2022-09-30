@@ -6,4 +6,9 @@ public class ReturnBody implements Body{
         var index = code.indexOf(';');
         returnData = code.substring(7, index);
     }
+
+    @Override
+    public String toString() {
+        return returnData;
+    }
 }

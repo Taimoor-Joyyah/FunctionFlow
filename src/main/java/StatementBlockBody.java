@@ -23,4 +23,14 @@ public class StatementBlockBody implements Body {
             }
         }
     }
+
+    @Override
+    public String toString() {
+        var builder = new StringBuilder();
+        if (statementList.size() != 0)
+            builder.append(statementList.get(0));
+        for (int i = 1; i < statementList.size(); i++)
+            builder.append("\n").append(statementList.get(i));
+        return builder.toString();
+    }
 }

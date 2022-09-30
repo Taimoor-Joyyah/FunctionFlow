@@ -16,4 +16,14 @@ public class PrototypeBody implements Body {
         parameters = parameterString.split(",");
         for (int i = 0; i < parameters.length; i++) parameters[i] = parameters[i].trim();
     }
+
+    @Override
+    public String toString() {
+        var builder = new StringBuilder();
+        if (parameters.length != 0)
+            builder.append(parameters[0]);
+        for (int i = 1; i < parameters.length; i++)
+            builder.append(", ").append(parameters[i]);
+        return builder.toString();
+    }
 }

@@ -43,4 +43,9 @@ public class ConditionBody implements Body {
             default -> null;
         };
     }
+
+    @Override
+    public String toString() {
+        return condition;
+    }
 }
